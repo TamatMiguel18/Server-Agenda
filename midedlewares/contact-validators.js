@@ -10,7 +10,7 @@ export const validateCreateContact = [
   body("contactCell")
     .trim()
     .notEmpty().withMessage("El número del contacto es requerido")
-    .isLength({ min: 8, max: 15 }).withMessage("El número debe tener entre 8 y 15 caracteres"),
+    .isLength({ min: 2, max: 15 }).withMessage("El número debe tener entre 8 y 15 caracteres"),
 
   checkValidators
 ];
